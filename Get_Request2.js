@@ -102,13 +102,44 @@ var post_or_get_string = function (url, method, param_obj, responseType, callbac
     console.log("request.onreadystatechange not called");
 }
 
+var execute_command_by_get = function(url, get_param_obj){
+    console.log("function 'execute_command_by_get' are called");
+    post_or_get_string(url, "GET", get_param_obj, "text", function(sucsess, text){
+        if(sucsess != false){
+            var temp = text.split("{");
+            var replaced_str = temp[text.split("{").length - 1].split("}", 1)[0].split(",", 1)[0].split(":");
+            console.log(replaced_str[0] + ",,," + replaced_str[1]);
+            var action = replaced_str[1];
 
+            switch(action){
+                case "sleep":
+                    console.log("command 'sleep' are called");
+                case "null":
+                    console.log("command 'null' are called");
+                default:
+                    console.log("command 'default' are called");
+            }
+        }
+    })
+}
 //送信ボタンにonclickイベントを追加
 window.onload = function () {
     // document.getElementById("getbutton").onclick = send_get;
     // console.log("document.getElementById.onclic");
 
-    post_or_get_string("http://codegarage.edisonthk.com/thisistest/json/get","GET",{a:"a",bb:"cccc"},"text",function(sucsess, text){
+    /*post_or_get_string("http://codegarage.edisonthk.com/thisistest/json/get","GET",{a:"a",bb:"cccc"},"text",function(sucsess, text){
         console.log(text);
-    });
+        var replaced_str = text.split("{");
+        console.log(replaced_str[0] + ",,," + replaced_str[1] + ",,," + replaced_str[2]);
+        var replaced_str2 = replaced_str[2].split("}", 1);
+        console.log(replaced_str2[0]);
+        var replaced_str3 = replaced_str2[0].split(",", 1);
+        console.log(replaced_str3[0]);
+        console.log(text.split("{")[2].split("}", 1)[0].split(",", 1)[0]);
+        var replaced_str4 = replaced_str3[0].split(":");
+        console.log(replaced_str4[0] + ",,," + replaced_str4[1]);
+
+    });*/
+    execute_command_by_get("http://bgmlife.edisonthk.com/", {time_at:"22",sensors:"desk"});
 }
+//bgmlife.edisonthk.com/?time_at=22:30&sensors=desk
