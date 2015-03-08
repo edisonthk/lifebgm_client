@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.3.css"/>
+    <link rel="stylesheet" href="css/confirm.css">
+</head>
+<body>
+    <div data-role="page" id="ble_page">
+        <div data-role="header">
+            <a id="back" data-role="button" data-icon="arrow-l" class="ui-btn-light" style="display: none">Back</a>
+            <h1 id="header">BleClient Demo</h1>
+            <a id="search_service" data-role="button" class="ui-btn-right" style="display: none">SearchService</a>
+        </div>
+
+        <div id="list_content" data-role="content">
+            <ul data-role="listview" id="device_list" data-inset="true">
+            </ul>
+        </div>
+
+        <div id="device_content" data-role="content" style="display: none">
+            <h2 id="connect_state">connecting...</h2>
+            <div data-role="footer" class="ui-bar"></div>
+            <div id="connect_device">
+                <h3>Device:</h3>
+                <p><b>name: </b><span id="device_name">unknown</span></p>
+                <p><b>address: </b><span id="device_address">unknown</span></p>
+                <p><b>rssi: </b><span id="device_rssi">unknown</span></p>
+                <p><b>type: </b><span id="device_type">unknown</span></p>
+            </div>
+
+            <div data-role="footer" class="ui-bar">
+                <span id="path"></span>
+            </div>
+
+            <div id="service_list_div" style="display: none">
+                <h3>Service List:</h3>
+                <ul data-role="listview" id="service_list" data-inset="true">
+                </ul>
+            </div>
+
+            <div id="characteristic_list_div" style="display: none">
+                <h3>Characteristic List:</h3>
+                <ul data-role="listview" id="characteristic_list" data-inset="true">
+                </ul>
+            </div>
+
+            <div id="characteristic_details" style="display: none">
+                <h3 id="characteristic_title">Characteristic Details</h3>
+                <b>read data:</b>
+                <span id="char_read_data">characteristic read</span>
+
+                <div data-role="footer" class="ui-bar-b">
+                    <button id="char_read">Read</button>
+                    <button id="char_write">Write</button>
+                </div>
+            </div>
+
+            <div id="descriptor_list_div" style="display: none">
+                <h3>Descriptor List:</h3>
+                <ul data-role="listview" id="descriptor_list" data-inset="true">
+                </ul>
+            </div>
+
+            <div id="descriptor_details" style="display: none">
+                <h3 id="descriptor_title">Descriptor Details</h3>
+                <b>read data:</b>
+                <span id="des_read_data">descriptor read</span>
+
+                <div data-role="footer" class="ui-bar-b">
+                    <button id="des_read">Read</button>
+                    <button id="des_write">Write</button>
+                </div>
+            </div>
+        </div>
+
+        <div data-role="footer" class="ui-bar" id="footer_bar">
+            <button id="search">search</button>
+        </div>
+    </div>
+</body>
+<script src="jquery/jquery-1.9.1.js"></script>
+<script src="jquery/jquery.mobile-1.4.3.js"></script>
+<script src="js/ble_gatt_client_control.js"></script>
+<script src="js/lib/dialog.js"></script>
+<script src="js/lib/loger.js"></script>
+<script src="js/ble_demo.js"></script>
+</html>
