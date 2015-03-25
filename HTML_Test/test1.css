@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'PT Mono';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Mono'), local('PTMono-Regular'), url(https://themes.googleusercontent.com/static/fonts/ptmono/v2/jmle3kzCPnW8O7_gZGRDlQ.woff) format('woff');
+}
+div.box{
+	position: absolute;
+	width: 72px;
+	height: 72px;
+}
+section.view_box{
+	width: inherit;
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: column;
+	-moz-flex-direction: column;
+	-o-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	align-items: center;
+}
+section.box{
+	width: 80px;
+	height:80px; 
+}
+section.background{
+	background-repeat: no-repeat;
+	background-image: url("./lgf01a201309021800.png");
+	width: 1024px;
+	height: 683px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+#time{
+	font-size: 60px;
+}
+#am_pm{
+	font-size: 40px;
+}
+#date{
+	font-size: 35px;
+}
+.monospace{
+	font-family:"PT Mono","IPAexÉSÉVÉbÉN","IPAÉSÉVÉbÉN",'Lucida Grande','Hiragino Kaku Gothic ProN', 'ÉqÉâÉMÉmäpÉS ProN W3',Meiryo,ÉÅÉCÉäÉI, sans-serif;
+}
+.gosick{
+	font-family:"IPAexÉSÉVÉbÉN","IPAÉSÉVÉbÉN","ü‡ÉSÉVÉbÉN", 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ÉqÉâÉMÉmäpÉS ProN W3',Meiryo,ÉÅÉCÉäÉI, sans-serif;
+}
+.pic img{
+	width: 50px;
+	height: 50px;
+}
+.white {
+	color: white;
+}
+
+.container1{
+	display: inline-block;
+	margin: 0px auto;
+}
+.inner_container1{
+	width: 250px;
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.container2{
+	display: inline-block;
+	margin: 0px auto;
+}
+.inner_container2{
+	width: 400px;
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.container3{
+	display: inline-block;
+	margin: 0px auto;
+}
+.inner_container3{
+	width: 120px;
+	display: flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	flex-direction: row;
+	-moz-flex-direction: row;
+	-o-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+}
