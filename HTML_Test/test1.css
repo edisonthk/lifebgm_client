@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ï»¿@charset "UTF-8";
 @font-face {
 	font-family: 'PT Mono';
 	font-style: normal;
@@ -47,10 +47,10 @@ section.background{
 	font-size: 35px;
 }
 .monospace{
-	font-family:"PT Mono","IPAexƒSƒVƒbƒN","IPAƒSƒVƒbƒN",'Lucida Grande','Hiragino Kaku Gothic ProN', 'ƒqƒ‰ƒMƒmŠpƒS ProN W3',Meiryo,ƒƒCƒŠƒI, sans-serif;
+	font-family:"PT Mono","IPAexã‚´ã‚·ãƒƒã‚¯","IPAã‚´ã‚·ãƒƒã‚¯",'Lucida Grande','Hiragino Kaku Gothic ProN', 'ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ ProN W3',Meiryo,ãƒ¡ã‚¤ãƒªã‚ª, sans-serif;
 }
 .gosick{
-	font-family:"IPAexƒSƒVƒbƒN","IPAƒSƒVƒbƒN","ŸàƒSƒVƒbƒN", 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ƒqƒ‰ƒMƒmŠpƒS ProN W3',Meiryo,ƒƒCƒŠƒI, sans-serif;
+	font-family:"IPAexã‚´ã‚·ãƒƒã‚¯","IPAã‚´ã‚·ãƒƒã‚¯","æ¸¸ã‚´ã‚·ãƒƒã‚¯", 'Lucida Grande','Hiragino Kaku Gothic ProN', 'ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ ProN W3',Meiryo,ãƒ¡ã‚¤ãƒªã‚ª, sans-serif;
 }
 .pic img{
 	width: 50px;
@@ -95,7 +95,7 @@ section.background{
 	-o-flex-direction: row;
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
 }
 .container3{
